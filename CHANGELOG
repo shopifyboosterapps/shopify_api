@@ -1,3 +1,34 @@
+== Version 4.8.0
+
+* Added `add_engagements` to `ShopifyAPI::MarketingEvent`
+
+== Version 4.7.1
+
+* Added support for URL parameter (e.g. limit & page) to ShopifyAPI::Metafields
+* Added support for URL parameter (e.g. limit & page) to metafield operator in ShopifyAPI::Shop
+
+== Version 4.7.0
+
+* Removed the mandatory `application_id` parameter from `ShopifyAPI::ProductListing` and `ShopifyAPI::CollectionListing`
+* Fixed a bug related to the non-standard primary key for `ShopifyAPI::ProductListing` and `ShopifyAPI::CollectionListing`
+
+== Version 4.6.0
+
+* Added `ShopifyAPI::Report`
+
+== Version 4.5.0
+
+* Added `ShopifyAPI::MarketingEvent`
+
+== Version 4.4.0
+
+* Added `ShopifyAPI::CustomerInvite`
+* Support for Customer#send_invite endpoint
+
+== Version 4.3.8
+
+* Added `ShopifyAPI::ResourceFeedback`
+
 == Version 4.3.7
 
 * Added support for `complete` in `ShopifyAPI::DraftOrder`
