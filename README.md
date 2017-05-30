@@ -59,7 +59,7 @@ ShopifyAPI uses ActiveResource to communicate with the REST web service. ActiveR
 2. For a private App you just need to set the base site url as follows:
 
    ```ruby
-   shop_url = "https://#{API_KEY}:#{PASSWORD}@SHOP_NAME.myshopify.com/admin"
+   shop_url = "https://#{API_KEY}:#{PASSWORD}@#{SHOP_NAME}.myshopify.com/admin"
    ShopifyAPI::Base.site = shop_url
    ```
 
@@ -246,7 +246,7 @@ rake install
 
 ## Additional Resources
 
-API Docs: http://docs.shopify.com/api
+API Docs: https://help.shopify.com/api/reference
 
 Ask questions on the forums: http://ecommerce.shopify.com/c/shopify-apis-and-technology
 

@@ -37,8 +37,16 @@ class DiscountCodeTest < Test::Unit::TestCase
     discount_code_response = ActiveSupport::JSON.decode(load_fixture('discount_code'))
     discount_code_response['discount_code']['code'] = "WINTERSALE50"
     @discount_code.code = "WINTERSALE50"
+<<<<<<< HEAD
     fake 'price_rules/102586120/discount_codes/1002091923', method: :put, status: 200, body: ActiveSupport::JSON.encode(discount_code_response)
 
+=======
+
+    fake 'price_rules/102586120/discount_codes/1002091923', method: :put, status: 200, body: ActiveSupport::JSON.encode(discount_code_response)
+
+    @discount_code.save
+    
+>>>>>>> 7d4ef9d0d30473abe1ac1935288ded7b04d580ad
     assert_equal discount_code_response['discount_code']['code'], @discount_code.code
   end
 

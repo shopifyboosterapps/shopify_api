@@ -21,7 +21,12 @@
         "greater_than_or_equal_to": 10
       },
       "prerequisite_shipping_price_range": {},
+<<<<<<< HEAD
       "prerequisite_saved_search_ids": [34,88]
+=======
+      "prerequisite_saved_search_ids": [34,88],
+      "title": "Summer Sale Event 2017"
+>>>>>>> 7d4ef9d0d30473abe1ac1935288ded7b04d580ad
     }
   ]
 }
