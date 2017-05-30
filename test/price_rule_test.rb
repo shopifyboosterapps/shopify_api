@@ -52,6 +52,11 @@ class PriceRuleTest < Test::Unit::TestCase
     @price_rule.value = -50.0
     fake 'price_rules/102586120', method: :put, status: 200, body: ActiveSupport::JSON.encode(price_rule_response)
 
+<<<<<<< HEAD
+=======
+    @price_rule.save
+
+>>>>>>> 7d4ef9d0d30473abe1ac1935288ded7b04d580ad
     assert_equal price_rule_response['price_rule']['value'], @price_rule.value
   end
 
